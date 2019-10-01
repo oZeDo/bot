@@ -1,3 +1,2 @@
-token = ''
-confirmation_token = ''
-access_token = ''
+token = ""
+confirmation_string = ""
