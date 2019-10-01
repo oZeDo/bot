@@ -19,7 +19,7 @@ def bot():
                                      attachment=resp['object']['attachments'])
         return 'ok'
     else:
-        return 'ok'
+        return abort(400)
 
 
 if __name__ == '__main__':
