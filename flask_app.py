@@ -7,7 +7,7 @@ app = Flask(__name__)
 
 @app.route("/", methods=["POST"])
 def bot():
-    resp = request.json()
+    resp = request.json
     if 'type' not in resp.keys():
         return abort(400)
     if resp['type'] == 'confirmation':
