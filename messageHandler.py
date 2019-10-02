@@ -1,6 +1,6 @@
 from fuzzywuzzy import process as process_
-from commandHandler import command_list
-import messageSender
+from command_system import command_list
+import vkapi
 import importlib
 import os
 
@@ -26,4 +26,4 @@ def create_answer(peer_id, message, attachment=""):
     load_modules()
     message, attachment = get_answer(message, attachment)
     if message != "" or attachment != "":
-        messageSender.send_message(peer_id, message, attachment)
+        vkapi.send_message(peer_id, message, attachment)
